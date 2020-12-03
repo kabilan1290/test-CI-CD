@@ -42,5 +42,4 @@ jobs:
       - name: curl
         uses: wei/curl@v1
         with:
-          args: --request POST --url 'https://kabilan1290.atlassian.net/rest/api/3/issue' --user 'tamiltuts1290@gmail.com:uWRs98Uikffi6SegiCqpA897' --header 'Accept: application/json' --header 'Content-Type: application/json' --data '{"fields":{"summary":"CodeBuild - Build Failed","issuetype":{"name":"Bug"},"project":{"key":"KAB"},"description":{"type":"doc","version":1,"content":[{"type":"paragraph","content":[{"text":"Build ID: CODEBUILD_BUILD_ID \n Build Number:CODEBUILD_BUILD_NUMBER","type":"text"}]}]}}}'
-
+          args: ${{secrets.CURL_COMMAND}}
