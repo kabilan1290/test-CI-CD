@@ -25,3 +25,15 @@ jobs:
           user: ${{ github.repository_owner }}
           # ${{ secrets.GITHUB_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout repo
+        uses: actions/checkout@master
+
+      - name: Run Checkov action
+        id: checkov
+        uses: bridgecrewio/checkov-action@master
+        with:
+          directory: example/
+          skip_check: CKV_AWS_1 # optional: skip a specific check_id
+          quiet: true # optional: display only failed checks
+          framework: terraform # optional: run only on a specific infrastructure {cloudformation,terraform,kubernetes,all}:  
