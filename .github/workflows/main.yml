@@ -41,4 +41,4 @@ jobs:
       - name: curl
         uses: wei/curl@v1
         with:
-          args:  --request POST --url 'https://kabilan1290.atlassian.net/rest/api/3/issue' --user 'tamiltuts1290@gmail.com:uWRs98Uikffi6SegiCqpA897' --header 'Accept: application/json' --header 'Content-Type: application/json' 
+          args:  --request POST --url 'https://kabilan1290.atlassian.net/rest/api/3/issue' --user 'tamiltuts1290@gmail.com:uWRs98Uikffi6SegiCqpA897' --header 'Accept:application/json' --header 'Content-Type:application/json' 
