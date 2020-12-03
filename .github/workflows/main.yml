@@ -1,4 +1,4 @@
-name: 'Code analyzer and Checknov'
+name: 'Code analyzer and Checkov'
 
 on:
   push: {branches: main}
