@@ -3,7 +3,7 @@ env:
   variables:
    SNYK: "2c46a35a-45b1-4aa3-9590-f500ccb5fa43"
    AUTH: "tamiltuts1290@gmail.com:uWRs98Uikffi6SegiCqpA897"
-   U: "https://kabilan1290.atlassian.net/rest/api/3/issue'"
+   U: "https://kabilan1290.atlassian.net/rest/api/3/issue"
    H1: "Accept:application/json"
    H2: "Content-Type:application/json"
 phases:
